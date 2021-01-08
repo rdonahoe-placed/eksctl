@@ -223,5 +223,9 @@ func makeTags(ng *api.NodeGroupBase, meta *api.ClusterMeta) []gfnec2.LaunchTempl
 			ResourceType: gfnt.NewString("instance"),
 			Tags:         cfnTags,
 		},
+		{
+			ResourceType: gfnt.NewString("volume"),
+			Tags:         cfnTags,
+		},
 	}
 }
